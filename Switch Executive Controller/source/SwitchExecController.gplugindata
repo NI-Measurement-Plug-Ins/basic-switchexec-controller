@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<GPluginMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/InstrumentStudio/GPluginMetadata">
+	<Plugins>
+		<PluginData 
+			UniqueName="PBU-SRD SwitchExec Controller"
+			DisplayName="Basic Switch Executive Controller"
+			PanelType="Switch Executive"
+			GroupName="Other devices"
+			VIPath="SwitchExecController.lvlibp\Switch Executive Controller\source\Main.vi"
+			SupportedPanelSizes="Small"
+			ApplicationContext="Unique" />
+	</Plugins>
+</GPluginMetadata>
