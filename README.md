@@ -17,3 +17,4 @@ Some test systems have switches in between instruments and the devices under tes
 
 ## Dependencies:
 - NI Switch Executive
+- JKI State Machine (Available via VI Package Manager)
