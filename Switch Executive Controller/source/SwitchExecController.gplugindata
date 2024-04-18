@@ -7,7 +7,7 @@
 			PanelType="Switch Executive"
 			GroupName="Other devices"
 			VIPath="SwitchExecController.lvlibp\Switch Executive Controller\source\Main.vi"
-			SupportedPanelSizes="Small"
+			SupportedPanelSizes="LargeAndSmall"
 			ApplicationContext="Unique" />
 	</Plugins>
 </GPluginMetadata>

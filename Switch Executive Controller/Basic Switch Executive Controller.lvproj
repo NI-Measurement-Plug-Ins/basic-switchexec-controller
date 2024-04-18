@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="23008000">
+<Project Type="Project" LVVersion="24008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -14,6 +14,9 @@
 		<Item Name="SwitchExecController.lvlib" Type="Library" URL="../source/SwitchExecController.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Assert Array Dimension Count.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Array Dimension Count.vim"/>
+				<Item Name="Build State String with Arguments__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Build State String with Arguments__JKI_lib_State_Machine.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -21,6 +24,7 @@
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
@@ -78,6 +82,7 @@
 				<Item Name="niseVirtualDevice Get Route.vi" Type="VI" URL="/&lt;vilib&gt;/SwitchExecutive/niseCfg.llb/niseVirtualDevice Get Route.vi"/>
 				<Item Name="niseVirtualDevice Get Routes.vi" Type="VI" URL="/&lt;vilib&gt;/SwitchExecutive/niseCfg.llb/niseVirtualDevice Get Routes.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -107,7 +112,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{16EEC91C-1653-4359-B2A9-8261C9AD051A}</Property>
-				<Property Name="Bld_version.build" Type="Int">50</Property>
+				<Property Name="Bld_version.build" Type="Int">60</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SwitchExecController.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/InstrumentStudio Plug-in/SwitchExecController.lvlibp</Property>
@@ -149,7 +154,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">basic-switch-executive-controller_1.0.0-0_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">basic-switch-executive-controller_1.0.0-1_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -158,29 +163,29 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">1</Property>
+				<Property Name="PKG_buildNumber" Type="Int">2</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">23.3.2.49153-0+f1</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">23.8.0.49182-0+f30</Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2023-runtime-engine</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">NI Switch Executive Support</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-switchexecutive-full-common</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Application Software</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">NI Switch Executive, the intelligent switch management and routing application.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[1].MinVersion" Type="Str">23.8.0.49182-0+f30</Property>
+				<Property Name="PKG_dependencies[1].MinVersion" Type="Str">24.1.1.49153-0+f1</Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI Switch Executive Support</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-switchexecutive-full-common</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Application Software</Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">NI Switch Executive, the intelligent switch management and routing application.</Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2024-runtime-engine</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">Small panel plug-in for InstrumentStudio that enables basic control of Switch Executive within InstrumentStudio.</Property>
