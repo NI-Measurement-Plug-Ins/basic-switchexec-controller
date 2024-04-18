@@ -112,8 +112,9 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{16EEC91C-1653-4359-B2A9-8261C9AD051A}</Property>
-				<Property Name="Bld_version.build" Type="Int">60</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SwitchExecController.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/InstrumentStudio Plug-in/SwitchExecController.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -122,7 +123,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/InstrumentStudio Plug-in</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5DDBE003-583D-4AAB-9AD5-78655205A7E3}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0DE5B9FE-1C50-41C1-9AA7-F523536484FC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SwitchExecController.lvlib</Property>
@@ -154,7 +155,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">basic-switch-executive-controller_1.0.0-1_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">basic-switch-executive-controller_1.1.0-0_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -163,7 +164,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">2</Property>
+				<Property Name="PKG_buildNumber" Type="Int">1</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -228,7 +229,7 @@
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/InstrumentStudio Plug-in</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Basic Switch Executive Controller</Property>
-				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+				<Property Name="PKG_version" Type="Str">1.1.0</Property>
 			</Item>
 		</Item>
 	</Item>
